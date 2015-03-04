@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Rudsl::VERSION
   spec.authors       = ["Ajith Hussain"]
   spec.email         = ["csy0013@googlemail.com"]
-  spec.summary       = %q{A functional HTML and CSS dsl in Ruby}
-  spec.description   = %q{rudsl provides a function dsl in Ruby, for HTML and CSS.}
-  spec.homepage      = ""
+  spec.summary       = %q{A functional HTML DSL in Ruby}
+  spec.description   = %q{rudsl provides a simple DSL for HTML.}
+  spec.homepage      = "https://www.github.com/sparkymat/rudsl"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
