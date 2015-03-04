@@ -1,6 +1,7 @@
 # Rudsl
 
-TODO: Write a gem description
+Rudsl is a functional DSL in Ruby, for generating HTML (and eventually, CSS).
+
 
 ## Installation
 
@@ -20,7 +21,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Example 1
+
+```ruby
+include Rudsl
+
+node = div class:'list-container' do
+  ul do
+    %w(Hello world).each do |word|
+      li word
+    end
+  end
+end
+
+node.to_s # will return "<div class="list-container"><ul><li>Hello</li><li>world</li></ul></div>"
+```
 
 ## Contributing
 
