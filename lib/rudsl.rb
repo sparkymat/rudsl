@@ -20,7 +20,8 @@ module Rudsl
 
         if !block.nil?
           @_node_stack << node 
-          block.call
+          value = block.call
+          node.children << value if value.is_a?(String)
           @_node_stack.pop
         end
 
